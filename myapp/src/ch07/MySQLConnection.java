@@ -108,8 +108,8 @@ public class MySQLConnection {
 	public static void main(String[] args) {
 		MySQLConnection mcon = new MySQLConnection();
 //		mcon.InsertTeam("Àü¹ÎÃ¶", "ºÎ»ê", 28, "d?a");
-//		mcon.updateTeam(1, "½ÂÁø¹Ùº¸");
-		mcon.deleteTeam(8);
+		mcon.updateTeam(1, "Àü½ÂÁø");
+//		mcon.deleteTeam(8);
 		mcon.listTeam();
 	}
 }
