@@ -87,8 +87,9 @@ public class TeamMgr {
 		TeamBean bean = new TeamBean();
 		try {
 			con = pool.getConnection();
-			sql = "SELECT num, name, city, age, team FROM tblteam"
-					+"WHERE num = ?";
+			sql = "SELECT num, name, city, age, team FROM tblteam "
+					+ "WHERE num = ?";
+			
 			pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, num);
 			rs = pstmt.executeQuery();

@@ -24,8 +24,9 @@
 			TeamBean bean = vlist.get(i);
 			int num = bean.getNum();
 	%>
-	<tr>
-		<td><%=num %></td>
+	<tr align = "center">
+		<td><a href = teamSelect.jsp?num=<%=num %>>
+		<%=i+1 %></a></td>
 		<td><%=bean.getName() %></td>
 		<td><%=bean.getCity() %></td>
 		<td><%=bean.getAge() %></td>
