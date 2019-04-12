@@ -11,6 +11,8 @@
 		num = Integer.parseInt(request.getParameter("num"));	
 	}
 	TeamBean bean = mgr.getTeam(num);
+	//session에 bean 키값으로 저장, scope="sesstion"과 같은 기능
+	session.setAttribute("bean", bean);
 %>
 <link href="style.css" rel="stylesheet" type="text/css">
 <body>
@@ -42,5 +44,8 @@
 <a href="teamInsert.html">INSERT</a>&nbsp;&nbsp;
 <a href="teamDelete.jsp?num=<%=num %>">DELETE</a>&nbsp;&nbsp;
 <a href="teamUpdate.jsp?num=<%=num %>">UPDATE</a>&nbsp;&nbsp;
+
+<!-- session을 이용하여 업데이트만들기 -->
+<a href="teamUpdate2.jsp">UPDATE2</a>&nbsp;&nbsp;
 </div>
 </body>
