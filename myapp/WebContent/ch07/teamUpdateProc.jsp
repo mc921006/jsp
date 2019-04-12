@@ -15,14 +15,14 @@
 <%
 	boolean result = mgr.updateTeam(bean);
 	String str = "¾÷µ« ½ÇÆÐ";
-	String location = "teamInsert.html";
+	String location = "teamList.jsp";
 	if(result) {
 		str = "¾÷µ« ¼º°ø";
-		location =  "teamList.jsp";
+		location =  "teamSelect.jsp?num="+bean.getNum();
 	}
 %>
 <script>
 	alert("<%=str%>");
 	location.href = "<%=location%>";
-	l<%-- ocation.href(<%=location%>); --%>
+	<%-- location.href(<%=location%>); --%>
 </script>
