@@ -92,11 +92,11 @@
 							</tr>
 							<tr>
 								<td>취미</td>
-								<td>인터넷<input type="checkbox" name="hobby" value="인터넷">
-									여행<input type="checkbox" name="hobby" value="여행" checked> 게임<input
-									type="checkbox" name="hobby" value="게임" checked> 영화<input
-									type="checkbox" name="hobby" value="영화" checked> 운동<input
-									type="checkbox" name="hobby" value="운동">
+								<td><input type="checkbox" name="hobby" value="인터넷"> 인터넷
+									<input type="checkbox" name="hobby" value="여행" checked> 여행<input
+									type="checkbox" name="hobby" value="게임" checked> 게임<input
+									type="checkbox" name="hobby" value="영화" checked>  영화<input
+									type="checkbox" name="hobby" value="운동"> 운동
 								</td>
 								<td>취미를 선택 하세요.</td>
 							</tr>
